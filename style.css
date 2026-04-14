@@ -208,3 +208,22 @@ ul{list-style:none}
 .whatsapp-float{position:fixed;bottom:28px;right:28px;width:60px;height:60px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(37,211,102,.4);z-index:9999;transition:.3s;animation:wpBounce 2s infinite}
 .whatsapp-float:hover{transform:scale(1.1);box-shadow:0 6px 30px rgba(37,211,102,.6)}
 @keyframes wpBounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+/* ========== REVIEWS ========== */
+.reviews{padding:100px 0;background:#fff}
+.reviews-header{display:flex;justify-content:center;margin-bottom:48px}
+.reviews-google-badge{display:flex;align-items:center;gap:16px;background:var(--light);padding:20px 36px;border-radius:16px;border:1px solid #e8eaf0}
+.reviews-rating{font-family:'Century Gothic','CenturyGothic','AppleGothic',sans-serif;font-size:2rem;font-weight:700;color:var(--primary)}
+.reviews-stars{color:#FBBC05;font-size:1.2rem;letter-spacing:2px}
+.reviews-count{font-size:.85rem;color:#777}
+.reviews-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.review-card{background:var(--light);border-radius:var(--radius);padding:28px 24px;border:1px solid #e8eaf0;transition:var(--transition)}
+.review-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-md);border-color:rgba(122,235,241,.3)}
+.review-card-header{display:flex;align-items:center;gap:12px;margin-bottom:12px}
+.review-avatar{width:42px;height:42px;border-radius:50%;background:var(--primary);color:var(--accent);display:flex;align-items:center;justify-content:center;font-family:'Century Gothic',sans-serif;font-weight:700;font-size:1.1rem;flex-shrink:0}
+.review-name{font-weight:600;font-size:.95rem;color:var(--primary)}
+.review-date{font-size:.78rem;color:#999}
+.review-stars{color:#FBBC05;font-size:.95rem;letter-spacing:1px;margin-bottom:10px}
+.review-text{color:#555;font-size:.9rem;line-height:1.7}
+.reviews-cta{text-align:center;margin-top:40px}
+@media(max-width:1024px){.reviews-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:768px){.reviews-grid{grid-template-columns:1fr}}
