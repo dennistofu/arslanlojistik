@@ -90,7 +90,10 @@ const formSuccess = document.querySelector('.form-success');
 
 if (contactForm) {
   contactForm.addEventListener('submit', function(e) {
-    e.preventDefault();
+     // Pixel event
+  if (typeof fbq === 'function') {
+    fbq('track', 'Lead');
+  }
     
     // Collect form data
     const formData = new FormData(this);
