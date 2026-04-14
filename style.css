@@ -30,8 +30,7 @@ ul{list-style:none}
 .navbar.scrolled{background:rgba(3,7,32,.95);backdrop-filter:blur(12px);padding:10px 0;box-shadow:0 4px 20px rgba(0,0,0,.3)}
 .navbar .container{display:flex;align-items:center;justify-content:space-between}
 .navbar-logo{display:flex;align-items:center;gap:12px}
-.navbar-logo img{height:100px;width:auto}
-.navbar-logo span{font-family:'Century Gothic','CenturyGothic','AppleGothic',sans-serif;font-size:1.25rem;font-weight:700;color:#fff;letter-spacing:.5px}
+.navbar-logo img{height:150px;width:auto;margin:-35px 0}.navbar-logo span{font-family:'Century Gothic','CenturyGothic','AppleGothic',sans-serif;font-size:1.25rem;font-weight:700;color:#fff;letter-spacing:.5px}
 .navbar-links{display:flex;align-items:center;gap:32px}
 .navbar-links a{color:rgba(255,255,255,.85);font-size:.95rem;font-weight:500;transition:var(--transition);position:relative;padding-bottom:4px}
 .navbar-links a::after{content:'';position:absolute;bottom:0;left:0;width:0;height:2px;background:var(--accent);transition:var(--transition)}
